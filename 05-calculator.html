@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Calculator using HTML CSS JavaScript
+        </title>
+        <link rel="stylesheet" href="/calculator.css">
+    </head>
+
+    <body>
+        <p class="js-calc-screen calc-screen">
+
+        </p>
+        <button onclick="
+            calculation += '1';
+            calcDisplayFunc();
+        " class="num-button">1</button>
+        <button onclick="
+            calculation += '2';
+            calcDisplayFunc();
+        " class="num-button">2</button>
+        <button onclick="
+            calculation += '3'
+            console.log(calculation);
+        " class="num-button">3</button>
+        <button onclick="
+            calculation += ' + ';
+            calcDisplayFunc();
+        " class="ops-button">+</button>
+        
+        <br>
+
+        <button onclick="
+            calculation += '4';
+            calcDisplayFunc();
+        " class="num-button">4</button>
+        <button onclick="
+            calculation += '5';
+            calcDisplayFunc();
+        " class="num-button">5</button>
+        <button onclick="
+            calculation += '6';
+            calcDisplayFunc();
+        " class="num-button">6</button>
+        <button onclick="
+            calculation += ' - ';
+            calcDisplayFunc();
+        " class="ops-button">-</button>
+
+        <br>
+        
+        <button onclick="
+            calculation += '7';
+            calcDisplayFunc();
+        " class="num-button">7</button>
+        <button onclick="
+            calculation += '8';
+            calcDisplayFunc();
+        " class="num-button">8</button>
+        <button onclick="
+            calculation += '9';
+            calcDisplayFunc();
+        " class="num-button">9</button>
+        <button onclick="
+            calculation += ' * ';
+            calcDisplayFunc();
+        " class="ops-button">*</button>
+
+        <br>
+        
+        <button onclick="
+            calculation += '0';
+            calcDisplayFunc();
+        " class="num-button">0</button>
+        <button onclick="
+            calculation += '.';
+            calcDisplayFunc();
+        " class="num-button">.</button>
+        <button onclick="
+            calculation = eval(calculation);
+            calcDisplayFunc();
+            calculation = '';
+        " id="equal-button">=</button>
+        <button onclick="
+            calculation += ' / ';
+            calcDisplayFunc();
+        " class="ops-button">/</button>
+
+        <br>
+
+        <button onclick="
+            calculation = '';
+            calcDisplayFunc();
+        " id="clear-button">Clear</button>
+
+        <script src="/calculator.js"></script>
+        
+    </body>
+</html>

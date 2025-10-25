@@ -1,0 +1,44 @@
+body{
+    background-color: black;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.calc-screen{
+    height: 40px;
+    color: white;
+}
+
+.num-button, #equal-button{
+    border: none;
+    color: white;
+    background-color: gray;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 25px;
+
+}
+
+.ops-button{
+    border: none;
+    color: white;
+    background-color: orange;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    margin: 1px;
+    border-radius: 25px;
+}
+
+#clear-button{
+    border: none;
+    color: white;
+    background-color: gray;
+    width: 120px;
+    height: 50px;
+    font-size: 25px;
+    margin: 5px;
+    border-radius: 25px;
+}
