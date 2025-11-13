@@ -1,44 +1,89 @@
-body{
+body {
     background-color: black;
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     font-size: 20px;
-}
-
-.calc-screen{
-    height: 40px;
     color: white;
 }
 
-.num-button, #equal-button{
+/* Calculator layout */
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+/* Display screen */
+.calc-screen {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* Button grid */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Number and equal buttons */
+.num-button,
+#equal-button {
     border: none;
     color: white;
     background-color: gray;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 25px;
-    margin: 5px;
-    border-radius: 25px;
-
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-.ops-button{
+.num-button:hover,
+#equal-button:hover {
+    background-color: #6c6c6c;
+}
+
+/* Operator buttons */
+.ops-button {
     border: none;
     color: white;
     background-color: orange;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     font-size: 25px;
-    margin: 1px;
-    border-radius: 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
 
-#clear-button{
+.ops-button:hover {
+    background-color: darkorange;
+}
+
+/* Clear button */
+#clear-button {
     border: none;
     color: white;
     background-color: gray;
-    width: 120px;
+    width: 260px;
     height: 50px;
-    font-size: 25px;
-    margin: 5px;
+    font-size: 22px;
+    margin-top: 15px;
     border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+#clear-button:hover {
+    background-color: #6c6c6c;
 }
